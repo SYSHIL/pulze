@@ -1,4 +1,5 @@
 const USER = require('./../models/userModel');
+const password = require('./passwordHasher')
 
 module.exports.getAllUsers = async (req, res) => {
     try {
@@ -23,7 +24,10 @@ module.exports.getAllUsers = async (req, res) => {
 module.exports.createUser = async (req, res) => {
     try {
 
-        const newUser = await USER.create(req.body);
+        let newUser = req.body;
+        newUser.password = await password.hash(newUser.password)
+
+        newUser = await USER.create(newUser);
 
         res.status(201).json({
             status: "Success",
@@ -49,8 +53,8 @@ module.exports.getUser = async (req, res) => {
 
         console.log(req.params.id)
         const user = await USER.findById(req.params.id);
-        // req.session.username = user.email;
-        // req.session.loggedin = true;
+        req.session.username = user.email;
+        req.session.loggedin = true;
         console.log(req.session)
         res.status(200).json({
             status: "Success",

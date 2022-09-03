@@ -13,6 +13,11 @@ app.set("view engine", ejs);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "/views")));
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+}));
 
 app.use("/", homeRouter);
 app.use("/user", userRouter);
