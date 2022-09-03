@@ -7,6 +7,6 @@ router.route('/home')
     .get(homeRouter.getHomePage);
 
 router.route('/about')
-    .get(homeRouter.getAboutPage)
+    .get(homeRouter.getAboutPage);
 
 module.exports = router
