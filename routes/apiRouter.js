@@ -10,4 +10,7 @@ router.route('/users')
 router.route('/users/:id')
     .get(apiController.getUser)
 
+router.route('/patient')
+    .post(apiController.createPatient);
+
 module.exports = router

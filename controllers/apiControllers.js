@@ -1,4 +1,5 @@
 const USER = require('./../models/userModel');
+const PATIENTS = require('./../models/patientModel')
 const password = require('./passwordHasher')
 
 module.exports.getAllUsers = async (req, res) => {
@@ -70,6 +71,20 @@ module.exports.getUser = async (req, res) => {
             data: {
                 err
             }
+        })
+    }
+}
+
+exports.createPatient = async (req, res) => {
+    try {
+        const newPatient = await PATIENTS.create(req.body);
+        res.status(201).json({
+            newPatient
+        })
+    } catch (err) {
+        res.status(404).json({
+            status: 'fail',
+            err
         })
     }
 }
