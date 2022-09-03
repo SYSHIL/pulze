@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const ejs = require("ejs");
+const session = require("express-session")
 
 const homeRouter = require("./routes/homeRouter");
 const userRouter = require("./routes/userRouter");

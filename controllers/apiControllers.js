@@ -43,3 +43,29 @@ module.exports.createUser = async (req, res) => {
         })
     }
 }
+
+module.exports.getUser = async (req, res) => {
+    try {
+
+        console.log(req.params.id)
+        const user = await USER.findById(req.params.id);
+        // req.session.username = user.email;
+        // req.session.loggedin = true;
+        console.log(req.session)
+        res.status(200).json({
+            status: "Success",
+            data: {
+                user
+            },
+        })
+
+    } catch (err) {
+        // console.log(err)
+        res.status(404).json({
+            status: 'fail',
+            data: {
+                err
+            }
+        })
+    }
+}
