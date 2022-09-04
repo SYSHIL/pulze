@@ -9,24 +9,25 @@ Pulze is a real-time health monitor; we have developed it and aim to improve it 
 ### Tech stack,
 # Hardware side : 
 
-  KY-013 Analog Temperature Sensor Module
-  Arduino mega 2560
-  C++ 
-  Python
-  MongoDB
+  - KY-013 Analog Temperature Sensor Module
+  - Arduino mega 2560 
+  - C++ 
+  - Python 
+  - MongoDB 
   
 ![image](https://user-images.githubusercontent.com/62804977/188296032-5d5f6597-5ad3-4bb9-a88b-db20454ed084.png)
 
 # Web Development stack:
 
-  Node.js
-  MongoDB
-  Bootstrap
-  HTML
-  Vanilla CSS
+  - Node.js
+  - MongoDB
+  - Bootstrap
+  - HTML
+  - Vanilla CSS
 
 # Machine learning stack:
-  
+  - Pandas
+  - Tensorflow
   
 
 #### Members: 
