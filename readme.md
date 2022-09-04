@@ -26,8 +26,12 @@ Pulze is a real-time health monitor; we have developed it and aim to improve it 
   - Vanilla CSS
 
 ### Machine learning stack:
+  - Numpy
+  - Matplotlib
+  - Seaborn
   - Pandas
   - Tensorflow
+  - Scikit-Learn
   
 
 #### Members: 
