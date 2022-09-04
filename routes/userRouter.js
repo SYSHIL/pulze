@@ -1,12 +1,12 @@
 const express =require('express')
-const userRouter = require('./../controllers/userRouter')
+const userController = require('../controllers/userController')
 
 const router = express.Router()
 
 router.route('/home')
-    .get(userRouter.getAllPatients);
+    .get(userController.getUserHome);
 
 router.route('/dashboard/:id')
-    .get(userRouter.getPatient);
+    .get(userController.getPatient);
 
 module.exports = router

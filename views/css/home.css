@@ -1,0 +1,121 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://wallpaperaccess.com/full/1282794.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 4rem !important;
+  font-weight: 300 !important;
+}
+
+.heading-container .pulzes div {
+  font-size: 4.8rem; !important;
+}
+
+.heading-container .pulzes::before, .heading-container .pulzes::after {
+  top:60%;
+  width: 3rem;
+}
+
+.heading-container {
+  text-align: center;
+}
+
+a {text-decoration: none}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-btn:link,
+.my-btn:visited {
+  padding: 0.4rem 3rem;
+  font-size: 1.2rem;
+  background-color: white;
+  color: #203A43;
+  border: 1px solid white;
+  border-radius: 7px;
+  transition: all 0.4s;
+}
+
+.my-btn:hover,
+.my-btn:active {
+  color: #d7dde8;
+  border: 1px solid #203A43;
+  background-color: #203A43;
+}
+
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  padding: 0.25rem 0.7rem;
+  color: #d7dde8;
+  border-bottom: 1px transparent;
+  font-size: larger;
+  transition: all 0.4s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #a8adb6;
+  border-bottom: 1px solid #a8adb6;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  color: #333;
+  text-shadow: none;
+}
+
+.pulzes-link:link, .pulzes:visited, .pulzes:hover, .pulzes:active {
+  text-decoration: none;
+  color: #2dc1e4;
+}
+
+.pulzes {
+  position: relative;
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  color: #2dc1e4;
+}
+
+.pulzes::before {
+  content: "";
+  width: 2rem;
+  border-bottom: 3px solid #ff0a45;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translate(-120%);
+}
+
+.pulzes::after {
+  content: "";
+  width: 2rem;
+  border-bottom: 3px solid #ff0a45;
+  position: absolute;
+  top: 55%;
+  right: 0;
+  transform: translate(120%);
+}
+
+.pulzes>div {
+  color: #ff0a45;
+  font-size: 2.8rem;
+  display: inline-block;
+  text-transform: uppercase;
+  transform: rotate(-55deg);
+  margin: 0 0.5rem;
+}

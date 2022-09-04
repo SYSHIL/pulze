@@ -30,7 +30,7 @@ const patientSchema = mongoose.Schema({
         default: 72
     },
 
-    deathStatus: {
+    healthStatus: {
         type: Number,
         default: 0
     },

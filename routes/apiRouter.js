@@ -11,6 +11,10 @@ router.route('/users/:id')
     .get(apiController.getUser)
 
 router.route('/patient')
+    .get(apiController.getAllPatients)
     .post(apiController.createPatient);
+
+router.route('/patient/:id')
+    .get(apiController.getPatient);
 
 module.exports = router
