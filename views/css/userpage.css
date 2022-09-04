@@ -1,0 +1,47 @@
+body {
+    color: #203A43;
+}
+
+a {
+    text-decoration: none;
+}
+
+.patient-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.7rem 2rem;
+    border: 1px solid #E8F9FD;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    background-color: #E8F9FD;
+}
+
+.patient-data {
+    padding: 0.3rem 0;
+    border-right: 2px solid #203A43;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.patient-dashboard:link,
+.patient-dashboard:visited {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0 1rem;
+    color: #203A43;
+    background-color: #F9F9F9;
+    transition: all 0.4s;
+}
+
+.patient-dashboard:hover,
+.patient-dashboard:active {
+    color: #0F2027;
+    background-color: #d7dde8;
+}
