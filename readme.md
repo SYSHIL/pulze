@@ -6,6 +6,13 @@ We at the team Potheri FC, decided to take on challanges in Healthcare, IOT, Cyb
 
 Pulze is a real-time health monitor; we have developed it and aim to improve it further in time. This product collects various data from users at regular intervals and utilizes smart Machine learning models to understand if the user is likely to suffer a medical emergency in the near future. The product comes with a wearable device which collects sensor data from users which is provided to an online platform for doctors to monitor their patients' physical state. We understand the confidentiality of medical records and hence place a huge importance on the security of our platform.
 
+#### Members: 
+* Ilhan Shahidh Syed
+* Pulkit R
+* Renny Sam
+* Abhishek Biswas
+* Haripreeth Dwarakanath Avarur
+
 # Tech stack,
 ### Hardware stack : 
 
@@ -24,6 +31,9 @@ Pulze is a real-time health monitor; we have developed it and aim to improve it 
   - Bootstrap
   - HTML
   - Vanilla CSS
+  - Express 
+  - Argon2
+  
 
 ### Machine learning stack:
   - Numpy
@@ -32,11 +42,6 @@ Pulze is a real-time health monitor; we have developed it and aim to improve it 
   - Pandas
   - Tensorflow
   - Scikit-Learn
-  
 
-#### Members: 
-* Ilhan Shahidh Syed
-* Pulkit R
-* Renny Sam
-* Abhishek Biswas
-* Haripreeth Dwarakanath Avarur
+
+
